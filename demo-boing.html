@@ -2,7 +2,7 @@
   <head>
     <style>
       /* Add a responsive table style */
-      table {
+       table {
         border-collapse: collapse;
         width: 100%;
       }
@@ -10,11 +10,21 @@
       td, th {
         border: 1px solid #dddddd;
         text-align: left;
-        padding: 8px;
+        padding: 12px; /* Increase the padding */
+        font-size: 18px; /* Increase the font size */
       }
 
       tr:nth-child(even) {
         background-color: #dddddd;
+      }
+
+      /* Make the table and buttons responsive */
+      @media only screen and (max-width: 600px) {
+        table,
+        button {
+          width: 100%;
+          margin-bottom: 10px;
+        }
       }
     </style>
   </head>
