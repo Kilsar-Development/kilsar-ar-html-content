@@ -75,10 +75,20 @@
     </table>
     <br><br>
     <button onclick="goBack()">Back</button>
+    <br><br>
+    <button onclick="scanObject()">Open Scan Object</button>
+    <br><br>
+    <button onclick="listSavedObjects()">Open List Saved Objects</button>
   </body>
 </html>
 <script>
   function goBack() {
     location.href = "ario-ar-demo://back";
+  }
+  function scanObject() {
+    location.href = "ario-ar-demo://scanObject";
+  }
+  function listSavedObjects() {
+    location.href = "ario-ar-demo://listSavedObjects";
   }
 </script>
